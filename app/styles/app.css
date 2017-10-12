@@ -1,0 +1,18 @@
+.shift_box {
+	background-color: #6294e5;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+}
+
+.check_in {
+	text-align: right;
+}
+
+.confirm {
+	color: green;
+}
+
+.deny {
+	color: red;
+}
