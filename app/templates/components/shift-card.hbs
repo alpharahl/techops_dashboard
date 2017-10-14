@@ -1,12 +1,10 @@
 
-
-<h3>{{this.shiftName}}</h3>
-<h4>{{this.subDepartment}}</h4>
-{{#each shift.staff as |staff|}}
-  <p>{{staff.name}}</p>
-{{/each}}
-<div class="check_in pure-g">
-    <div class="pure-u-22-24"></div>
-    <div class="pure-u-1-24 confirm" {{action "checkIn"}}>&#10003;</div>
-    <div class="pure-u-1-24 deny"{{action "noShow"}}>&#10005;</div>
+<div class=container>
+  <h3>{{this.shiftName}}</h3>
+  <h4>{{this.subDepartment}}</h4>
+  {{#each shift.staff as |staff|}}
+    <p>{{staff.name}}</p>
+  {{/each}}
+  <button class="confirm-button" {{action "checkIn"}}>&#10003;</button>
+  <button class="deny-button"{{action "noShow"}}>&#10005;</button>
 </div>

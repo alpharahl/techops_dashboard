@@ -1,25 +1,29 @@
 .shift {
 	background-color: #a5a7aa;
-	border: 1px solid #000;
+	padding-bottom: 15px;
 }
 
 .worked {
-	background-color: #13a324;
+	background-color: #51ef5c;
 }
 
 .vacant {
-	background-color: #a21212;
+	background-color: #f2525f;
 }
 
 .check_in {
 }
 
-.confirm {
+.confirm-button{
 	color: green;
+	background-color: #a5a7aa;
+	border: 1px solid #000;
 }
 
-.deny {
+.deny-button{
 	color: red;
+	background-color: #a5a7aa;
+	border: 1px solid #000;
 }
 
 .center {

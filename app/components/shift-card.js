@@ -17,15 +17,12 @@ export default Component.extend({
   actions: {
     checkIn(){
       this.set('onShift', 'worked')
-      console.log("check in")
     },
     noShow(){
       this.set('onShift', 'vacant')
-      console.log("no show")
     },
     noData(){
       this.set('onShift', '')
-      console.log("no data")
     }
   }
 });
