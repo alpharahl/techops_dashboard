@@ -1,0 +1,6 @@
+{
+  "name": "techops-dashboard",
+  "dependencies": {
+    "pure": "^1.0.0"
+  }
+}

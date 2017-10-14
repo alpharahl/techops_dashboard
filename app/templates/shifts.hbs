@@ -2,13 +2,7 @@
 
 
 {{#each model as |shift|}}
-  <div class=shift_box>
-  	{{shift}}
-    <div class=check_in> 
-      <span class=confirm {{action "checkIn" shift}}>&#10003;</span>
-      <span class=deny {{action "noShow" shift}}>&#10005;</span>
-    </div>
-  </div>
+  {{shift-card title="Shift card for $(shift)" shift=shift}}
 {{/each}}
 
 <h2>Call Chain</h2>

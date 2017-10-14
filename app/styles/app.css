@@ -1,12 +1,18 @@
-.shift_box {
-	background-color: #6294e5;
-	width: 100px;
+.shift {
+	background-color: #a5a7aa;
+	border: 1px solid #000;
 	height: 100px;
-	padding: 10px;
+}
+
+.worked {
+	background-color: #13a324;
+}
+
+.vacant {
+	background-color: #a21212;
 }
 
 .check_in {
-	text-align: right;
 }
 
 .confirm {
@@ -15,4 +21,15 @@
 
 .deny {
 	color: red;
+}
+
+.center {
+	text-align: center;
+}
+
+.header {
+	background-color: #3e68ad;
+	color: white;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
