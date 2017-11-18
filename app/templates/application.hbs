@@ -1,8 +1,29 @@
 <head>
 </head>
 
-
-<div class=center>
-  <h1 class=header id="header">Techops Dashboard</h1>
-  {{outlet}}
-</div>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>Techops Dashboard</h1>
+    </div>
+    <div class="managers">
+      Some manager stuff
+    </div>
+    <div class="shifts">
+      {{outlet}}
+    </div>
+    <div class="callInfo">
+      <h2>Call Chain</h2>
+      <table class="footTable">
+        <tr>
+          <th class="center equalWidth">Network</th>
+          <th class="center equalWidth">AV</th>
+        </tr>
+        <tr>
+          <td class="center equalWidth">Current Manager &#8594; Tim &#8594; Rob</td>
+          <td class="center equalWidth">AV Support Tech &#8594; Current Manager &#8594; Dave/Dalton &#8594; Ian</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>

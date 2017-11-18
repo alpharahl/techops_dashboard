@@ -1,3 +1,6 @@
+
+
+
 .shift {
 	background-color: #a5a7aa;
 	padding-bottom: 15px;
@@ -26,8 +29,40 @@
 	border: 1px solid #000;
 }
 
+.reset-button{
+	color: yellow;
+	background-color: #a5a7aa;
+	border: 1px solid #000;
+}
+
 .center {
 	text-align: center;
+}
+
+.shift-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.shift-item{
+	margin: auto;
+	padding: 10px;
+}
+
+.shift-box{
+	height: 200px;
+	padding: 10px;
+}
+
+.wrapper{
+	display: grid;
+	height: 100vh;
+	/*grid-template-columns: repeat(4);*/
+	grid-template-rows: 100px 1fr 150px;
+	grid-template-areas:
+	  "header header"
+		"shifts managers"
+		"footer footer"
 }
 
 .header {
@@ -35,4 +70,37 @@
 	color: white;
 	padding-top: 25px;
 	padding-bottom: 25px;
+	grid-area: header;
+	text-align: center;
+}
+
+.managers{
+	grid-area: managers;
+	height: 100%;
+	background-color: #618ace;
+	color: white;
+	padding: 10px;
+}
+
+.shifts{
+	grid-area: shifts;
+	padding: 10px;
+}
+
+.callInfo{
+	grid-area: footer;
+	background-color: #3e68ad;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+.footTable{
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+
+.equalWidth{
+	width: 50%;
 }

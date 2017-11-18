@@ -1,16 +1,8 @@
 <h2>Shifts</h2>
-
-{{#each model as |shift|}}
-  {{shift-card title="Shift card for $(shift.name)" shift=shift}}
-  <br>
-{{/each}}
-
-<h2>Call Chain</h2>
-<h3>Network</h3>
-Current Manager &#8594;
-Network Specific Manager &#8594;
-Network DH
-<h3>AV</h3>
-Current Manager &#8594;
-AV specific manager &#8594;
-AV DH
+<div class='shift-list container'>
+  {{#each model as |shift|}}
+    <div class="shift-item">
+      {{shift-card title="Shift card for $(shift.name)" shift=shift}}
+    </div>
+  {{/each}}
+</div>
