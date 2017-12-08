@@ -4,6 +4,7 @@
 .shift {
 	background-color: #a5a7aa;
 	padding-bottom: 15px;
+	border-radius: 15px;
 }
 
 .worked {
@@ -42,6 +43,7 @@
 .shift-list{
 	display: flex;
 	flex-wrap: wrap;
+	align-items: stretch;
 }
 
 .shift-item{
@@ -50,19 +52,28 @@
 }
 
 .shift-box{
-	height: 200px;
-	padding: 10px;
+	padding: 5px;
 }
 
 .wrapper{
 	display: grid;
 	height: 100vh;
-	/*grid-template-columns: repeat(4);*/
 	grid-template-rows: 100px 1fr 150px;
+	grid-template-columns: 1fr 350px;
 	grid-template-areas:
-	  "header header"
-		"shifts managers"
-		"footer footer"
+	  "header"
+		"shifts"
+		"managers"
+		"footer"
+}
+
+@media (min-width: 800px){
+	.wrapper{
+		grid-template-areas:
+		  "header header"
+			"shifts managers"
+			"footer footer"
+	}
 }
 
 .header {

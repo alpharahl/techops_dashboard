@@ -1,11 +1,12 @@
 
 <div class="shift-box">
   <h3>{{this.shiftName}}</h3>
-  <h4>{{this.subDepartment}}</h4>
-  {{#each shift.staff as |staff|}}
-    <p>{{staff.name}}</p>
-  {{/each}}
-  <button class="confirm-button" {{action "checkIn"}}>&#10003;</button>
-  <button class="reset-button" {{action "noData"}}>O</button>
-  <button class="deny-button"{{action "noShow"}}>&#10005;</button>
+  <ul>
+    {{#each shift.staff as |staff index|}}
+      <li>{{staff.name}}</li>
+    {{/each}}
+  </ul>
+  <p class = "center">
+    {{shift.timeStart}}-{{shift.timeEnd}}
+  </p>
 </div>
