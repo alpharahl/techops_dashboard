@@ -89,7 +89,6 @@
 	grid-area: managers;
 	height: 100%;
 	background-color: #618ace;
-	color: white;
 	padding: 10px;
 }
 
@@ -113,5 +112,5 @@
 }
 
 .equalWidth{
-	width: 50%;
+	width: 33%;
 }

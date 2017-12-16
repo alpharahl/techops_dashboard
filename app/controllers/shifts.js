@@ -5,6 +5,15 @@ export default Controller.extend({
 		checkIn(shift){
 		},
 		noShow(shift){
-		}
+		},
+		signInBarcode(barcode){
+      console.log(barcode)
+    }
 	}
 });
+
+
+
+// signInBarcode(barcode){
+// 	console.log(barcode)
+// }
