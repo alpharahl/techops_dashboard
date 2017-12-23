@@ -13,16 +13,24 @@ export default Component.extend({
   subDepartment: Ember.computed('shift.splitName',function(){
     return this.get('splitName')[1];
   }),
-
-  actions: {
-    checkIn(){
-      this.set('onShift', 'worked')
-    },
-    noShow(){
-      this.set('onShift', 'vacant')
-    },
-    noData(){
-      this.set('onShift', '')
+  staffCount: Ember.computed('shift.shifts',function(){
+    return this.get('shift.shifts').length;
+  }),
+  workedCount: Ember.computed('shift.shifts',function(){
+    var worked = [];
+    this.get('shift.shifts').forEach(function(s){
+      if (s.worked_label == "This shift was worked"){
+        worked = worked.concat(s)
+      }
+    })
+    return worked.length;
+  }),
+  onShift: Ember.computed('shift.workedCount', function(){
+    if (this.get('workedCount')/this.get('shift.shifts').length >= 0.66){
+      console.log("yay")
+      return 'worked';
+    } else if(new Date(this.get('shift.start_time')) < new Date()) {
+      return 'vacant';
     }
-  }
+  })
 });

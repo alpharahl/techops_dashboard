@@ -1,13 +1,10 @@
 
 <div class="shift-box">
-  <h3>{{this.shiftName}}</h3>
-  1/1
-  <!-- <ul>
-    {{#each shift.staff as |staff index|}}
-      <li>{{staff.name}}</li>
-    {{/each}}
-  </ul> -->
+  <h3 class="center">{{this.shiftName}}</h3>
+  <p class="center">{{this.workedCount}}/{{this.staffCount}}</p>
   <p class = "center">
-    {{shift.timeStart}}-{{shift.timeEnd}}
+    Starts in: {{moment-from-now shift.start_time}}
+    <br>
+    Ends in: {{moment-from-now shift.end_time}}
   </p>
 </div>

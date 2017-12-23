@@ -3,12 +3,12 @@
 
 .shift {
 	background-color: #a5a7aa;
-	padding-bottom: 15px;
+	padding: 10px;
 	border-radius: 15px;
 }
 
 .worked {
-	background-color: #51ef5c;
+	background-color: #37cc41;
 }
 
 .vacant {
@@ -16,24 +16,6 @@
 }
 
 .check_in {
-}
-
-.confirm-button{
-	color: green;
-	background-color: #a5a7aa;
-	border: 1px solid #000;
-}
-
-.deny-button{
-	color: red;
-	background-color: #a5a7aa;
-	border: 1px solid #000;
-}
-
-.reset-button{
-	color: yellow;
-	background-color: #a5a7aa;
-	border: 1px solid #000;
 }
 
 .center {
@@ -77,8 +59,8 @@
 }
 
 .header {
-	background-color: #3e68ad;
-	color: white;
+	background-color: #0085c1;
+	color: #000000;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	grid-area: header;
@@ -88,19 +70,19 @@
 .managers{
 	grid-area: managers;
 	height: 100%;
-	background-color: #618ace;
+	background-color: #28b5f4;
 	padding: 10px;
 }
 
 .shifts{
 	grid-area: shifts;
 	padding: 10px;
+	background-color: #e0e1e2;
 }
 
 .callInfo{
 	grid-area: footer;
-	background-color: #3e68ad;
-	color: white;
+	background-color: #0085c1;
 	text-align: center;
 	padding: 10px;
 }
