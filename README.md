@@ -17,6 +17,7 @@ You will need the following things properly installed on your computer.
 * `git clone <repository-url>` this repository
 * `cd techops-dashboard`
 * `npm install`
+* `ember install ember-moment`
 
 ## Running / Development
 
