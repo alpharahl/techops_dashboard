@@ -18,6 +18,7 @@ You will need the following things properly installed on your computer.
 * `cd techops-dashboard`
 * `npm install`
 * `ember install ember-moment`
+* `ember install ember-toastr`
 
 ## Running / Development
 
