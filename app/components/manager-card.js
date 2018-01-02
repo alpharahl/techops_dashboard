@@ -9,6 +9,7 @@ export default Component.extend({
         function(data, header, response){
           if (response.status == 200){
             toast.success("Shift: " + data.name + " marked as worked")
+            this.set('barcode', '')
           }
         }
       ).catch(
@@ -16,6 +17,7 @@ export default Component.extend({
           toast.error("No shift found")
         }
       )
+      this.set('barcode', '')
     }
   },
   didRender(){
