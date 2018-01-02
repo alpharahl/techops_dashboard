@@ -17,5 +17,8 @@ export default Component.extend({
         }
       )
     }
+  },
+  didRender(){
+    this.$("barcode_entry").focus();
   }
 });
