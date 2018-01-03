@@ -59,10 +59,11 @@
 }
 
 .header {
-	background-color: #0085c1;
-	color: #000000;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	background-color: rgb(26,26,26);
+	color: rgb(255, 155, 26);
+	/*padding-top: 25px;*/
+	font-size: x-large;
+	/*padding-bottom: 25px;*/
 	grid-area: header;
 	text-align: center;
 }
@@ -70,27 +71,32 @@
 .managers{
 	grid-area: managers;
 	height: 100%;
-	background-color: #28b5f4;
+	background-color: rgb(26,26,26);
+	color: rgb(255, 155, 26);
 	padding: 10px;
+	font-size: large;
 }
 
 .shifts{
 	grid-area: shifts;
+	text-align: center;
 	padding: 10px;
 	background-color: #e0e1e2;
 }
 
 .callInfo{
 	grid-area: footer;
-	background-color: #0085c1;
+	background-color: rgb(26,26,26);
+	color: rgb(255,155,26);
 	text-align: center;
+	font-size: large;
 	padding: 10px;
 }
 
 .footTable{
 	margin-left: auto;
 	margin-right: auto;
-	width: 75%;
+	width: 100%;
 }
 
 .equalWidth{
