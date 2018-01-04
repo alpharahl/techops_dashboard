@@ -5,7 +5,7 @@ export default Component.extend({
   actions: {
     signInBarcode(barcode){
       var toast = this.get("toast")
-    	Ember.$.getJSON('mark_shift_worked/' + barcode).then(
+    	Ember.$.getJSON('mark_shift_worked?barcode=' + barcode).then(
         function(data, header, response){
           if (response.status == 200){
             toast.success("Shift: " + data.name + " marked as worked")
