@@ -7,7 +7,12 @@
     <br>
     Ends in: {{moment-from-now shift.end_time}}
   </p>
-  {{#each shift.staff as |staff|}}
-    <p>{{staff.name}}</p>
-  {{/each}}
+  <table style="text-align:center border-spacing:2px">
+    {{#each shift.staff as |staff|}}
+      <tr>
+        <td>{{staff.name}}</td>
+        <td>{{staff.worked}}</td>
+      </tr>
+    {{/each}}
+  </table>
 </div>
